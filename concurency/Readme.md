@@ -39,7 +39,12 @@ Concurency ( eszamanlilik) :
         * Select Case :
             - bir channel'a veri girisini bekletebiliyoruz.
 
-    Deadlock :
+    Deadlock(kitlenme) :
 
         * unbuffered bir channel'a hic dinleyici olmayinca write yapmaya calisirsask deadlock olur !
-            
+
+        * numerous wait group add() gelirse deadlock olur
+
+        * ayni lock iki kere ust uste cagirirsak deadlock olur.
+
+        * selec-case 'lerde default veya if condition kullanilmaz ise deadlock olur
