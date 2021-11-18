@@ -5,6 +5,11 @@ import (
 	"sync"
 )
 
+func main() {
+	benchmarkGoroutine()
+	benchmarkNormal()
+}
+
 func benchmarkGoroutine() {
 
 	wg := sync.WaitGroup{}
