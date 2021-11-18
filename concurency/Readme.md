@@ -35,3 +35,11 @@ Concurency ( eszamanlilik) :
 
         Not : Bir channel hem "yazma hem okuma" isleminde bloklama yapar.
               eger okuma isleminde bloklama istemiyorsak "Select/Case" mekanizmasi kullanilir.
+
+        * Select Case :
+            - bir channel'a veri girisini bekletebiliyoruz.
+
+    Deadlock :
+
+        * unbuffered bir channel'a hic dinleyici olmayinca write yapmaya calisirsask deadlock olur !
+            
